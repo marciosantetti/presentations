@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.hi[Growth, cycles, and residential investment]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Trinity College" />
+    <script src="Trinity_ResearchTalk_files/header-attrs/header-attrs.js"></script>
+    <link href="Trinity_ResearchTalk_files/remark-css/default.css" rel="stylesheet" />
+    <link href="Trinity_ResearchTalk_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="Trinity_ResearchTalk_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# .hi[Growth, cycles, and residential investment]
+## .note[Marcio Santetti]
+### Trinity College
+### December 2021
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class: middle, center, inverse
+
+
+.b[Marcio Santetti]
+
+&lt;img style="border-radius: 30%;" src="jm1_cropped.png" width="150px"/&gt;
+
+.b[Ph.D. Candidate]
+
+.b[University of Utah]
+
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg> santetti@gmail.com](mailto:santetti@gmail.com) &lt;br&gt;
+[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg> marcio.rbind.io](https://marcio.rbind.io) &lt;br&gt;
+[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> github.com/marciosantetti](https://github.com/marciosantetti) 
+
+---
+
+# Presentation outline
+
+&lt;br&gt;
+
+1. Overview/Motivation
+
+2. Theoretical premises
+
+3. Data sources and issues
+
+4. Applied methodology/Results
+
+5. Final remarks
+
+---
+layout: false
+class: inverse, middle
+
+# Overview
+
+---
+
+
+# Motivation
+
+.pull-left[
+
+A model of the .hi[growth/distributive] cycle:
+
+  - A never-ending .hi-red[conflict]/.hi[symbiosis] between capital and labor
+    - [`Goodwin (1967)`](https://link.springer.com/chapter/10.1007/978-1-349-05504-3_12)
+
+
+
+
+&lt;img src="goodwin.png", width = "80%"&gt;]
+
+
+--
+
+.pull-right[
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+Key .hi[missing points]:
+
+  - .hi-slate[*What*] drives the cycle?
+  
+  - .hi-slate[*Who*] drives the cycle?
+  
+  - How does the .hi-slate[Goodwin pattern] behave when including these features?
+
+]
+
+
+---
+layout: false
+class: inverse, middle
+
+# Theoretical premises
+
+---
+
+# Theoretical premises
+
+.pull-left[
+
+Starting point:
+
+- A model in capacity utilization (*u*), aggregate investment/accumulation (*g*), employment (*e*), and the labor share of income (*&amp;psi;*).
+
+
+
+.it[Novelty]: incorporating .hi[aggregate and disaggregated investment] into empirical post-Keynesian/neo-Goodwinian models.
+
+  - Residential investment: *household*- or *corporate*-led?
+
+]
+
+--
+
+.pull-right[
+
+&lt;br&gt;
+
+A four-variable stylized model on their .hi[contemporaneous] linkages:
+
+&lt;br&gt;
+
+$$
+`\begin{align}
+u_t &amp;= u(u_t, g_t, \psi_t) \tag{1} \\
+g_t &amp;= g(g_t, u_t, \psi_t) \tag{2} \\
+e_t &amp;= e(e_t, u_t) \tag{3} \\
+\psi_t &amp;= \psi(\psi_t, e_t) \tag{4}
+\end{align}`
+$$
+
+]
+
+
+---
+
+# Theoretical premises
+
+&lt;br&gt;
+
+$$
+`\begin{align}
+u_t &amp;= u(u_t, g_t, \psi_t) \tag{1} \\
+g_t &amp;= g(g_t, u_t, \psi_t) \tag{2} \\
+e_t &amp;= e(e_t, u_t) \tag{3} \\
+\psi_t &amp;= \psi(\psi_t, e_t) \tag{4}
+\end{align}`
+$$
+
+(1): The distributive variable contemporaneously affects the activity one, but not vice-versa. If `\(u_{\psi}&lt;0\)`, demand is .hi[profit-led].
+
+--
+
+(2): .hi[Cross-feedback] between investment and capacity utilization. Since investment is determined by profit rate expectations, it also depends on income distribution.
+
+--
+
+(3): Labor market as a product of the .hi[state] of the business cycle.
+
+--
+
+(4): A .hi[Phillips curve], relating distribution and the state of the labor market. If `\(\psi_e &gt; 0\)`, distribution follows a .hi[profit-squeeze] profile.
+
+---
+
+layout: false
+class: inverse, middle
+
+# Data sources and issues
+
+
+
+---
+
+# Data sources and issues
+
+* .hi[Sample period]: 1949Q1&amp;#8212;2020Q4
+
+--
+
+* .hi[Variables]:
+
+  * Real output (*u*, *proxy* for capacity utilization) and
+  * Aggregate (*g*), residential (*g*&lt;sup&gt;*R*&lt;/sup&gt;), and nonresidential (*g*&lt;sup&gt;*N*&lt;/sup&gt;) investment;
+  
+      * NIPA Table 1.1.3, 2012=100.
+      * FRED series *GDPC1* and *GPDIC1* for robustness checks.
+    
+  * Employment rate (*e*): remainder to 1 from FRED's *UNRATE* series;
+  
+  * Labor share (*&amp;psi;*): BLS's “headline measure,” non-farm business sector.
+  
+--
+  
+* .hi[Trend-cycle decomposition method]:
+
+  - Hamilton filter.
+
+
+
+---
+
+# The Hamilton filter in action
+
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-5-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Data sources and issues
+
+.hi[Key] theoretical prior in the business cycle literature:
+
+  - Residential investment as
+
+    - (*a*) a *household*-led and  
+    - (*b*) an *autonomous* expenditure.
+  
+--
+
+&lt;br&gt;
+
+The interpretation that the business cycle is *consumption*, *wage*, or at least *household-led* follows directly therefrom.
+
+--
+
+However, both (*a*) and (*b*) are likely .hi[incorrect priors].
+
+--
+
+&lt;br&gt;
+
+Let us start with (*a*).
+
+---
+
+# Data sources and issues
+
+*Household-led* residential investment?
+
+&gt; .note["**Residential structures consists of new construction of permanent-site single family and multifamily housing units**, improvements (additions, alterations, and major structural replacements) to housing units, expenditures on manufactured homes, brokers’ commissions and other ownership transfer costs on the sale of residential property, and net purchases of used structures from government agencies. Residential structures **also includes some types of equipment (such as heating and air conditioning equipment) that are built into the structure**. Residential equipment consists of equipment, such as furniture or household appliances, that is purchased by landlords for rental to tenants."]
+
+.right[(*BEA, Concepts and Methods of the U.S. National Income and Product Accounts, chapter 6*)]
+
+--
+
+
+
+The official description .hi[does not] attribute the construction of new housing units to households.
+
+--
+
+In fact, reality *discredits* such view.
+
+---
+
+# Data sources and issues
+
+Residential construction may be broken down into .hi[four] main segments:
+
+  - (*i*) new subdivisions of single-family homes;
+  - (*ii*) new multifamily buildings;
+  - (*iii*) isolated single-family owner-occupied homes built on commission by the owner;
+  - (*iv*) remodeling of existing owner-occupied properties.
+  
+--
+
+(*i*) and (*ii*) involve the largest money volumes, and are .hi[led by corporations].
+
+--
+
+(*iii*) and (*iv*) are mainly .hi[led by households], but new construction planned and executed by households accounts for "less than 5% of the total volume in this segment."
+
+--
+
+Thus, only *remodeling* is majorly household-led. 
+
+--
+
+Overall, only about .hi[1/3] of total residential investment is undertaken by households.
+
+
+---
+
+# Data sources and issues
+
+Now, regarding the .hi["autonomous"] character of household-led residential investment...
+
+--
+
+- Highly sensitive to .hi[financial] conditions (mortgage and rental rates) 
+
+  - [`Jud and Winkler (2002)`](https://ideas.repec.org/a/jre/issued/v23n1-22002p29-46.html)
+
+- Highly dependent on .hi[population]/.hi[labor] force growth rates 
+
+  - [`Zabel (2012)`](https://www.sciencedirect.com/science/article/pii/S0094119012000381)
+  - [`Harvard University's Joint Center For Housing Studies (2021)`](https://www.jchs.harvard.edu/improving-americas-housing-2021)
+  
+- Remodeling (improvement and repair) expenditures are highly correlated with .hi[economic activity] indicators
+  
+  - Own-sector and current income factors.
+  
+
+--
+
+`\(\therefore\)` Household-led residential investment is .hi[not] autonomous.
+
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Applied methodology
+
+
+---
+
+# Applied methodology
+
+### A four-variable system
+
+.pull-left[
+
+.hi[SVAR] representation:
+
+$$
+`\begin{aligned}
+\mathbf{A} \mathbf{\nu_t} = \mathbf{\alpha} + \sum_{i=1}^{l} \mathbf{A_{i}} \mathbf{\nu_{t-i}} + \mathbf{B} \mathbf{\varepsilon_{t}}
+\end{aligned}`
+$$
+
+where `\(\mathbf{\nu_t} = (u_t, g_t, e_t, \psi_t)'\)` is a row vector containing the endogenous variables.
+
+
+The key estimates are contained in  `\(\mathbf{\varepsilon_{t}}\)`, the vector of structural shocks (residuals).
+
+
+But these are *not directly observable*, requiring the estimation of a reduced-form VAR model.
+]
+
+--
+
+.pull-right[
+
+A .hi[reduced-form VAR] representation:
+
+$$
+`\begin{aligned}
+\mathbf{\nu_t} = \mathbf{\gamma} + \sum_{i=1}^{l} \mathbf{C_{i}} \mathbf{\nu_{t-i}} + e_{t}
+\end{aligned}`
+$$
+where `\(\mathbf{e_{t}} = \mathbf{A^{-1} B}\mathbf{\varepsilon_{t}}\)` is a vector of mutually correlated reduced-form residuals.
+
+]
+
+---
+
+# Applied methodology
+
+### A four-variable system
+
+
+
+$$
+`\begin{split}
+\mathbf{A}{e_{t}} = \mathbf{B}{\varepsilon_{t}} =  
+\left[ \begin{array}{cccc}
+1 &amp; a_{12} &amp; a_{13} &amp; a_{14} \\
+a_{21} &amp; 1 &amp; a_{23} &amp; a_{24} \\
+a_{31} &amp; a_{32} &amp; 1 &amp; a_{34} \\
+a_{41} &amp; a_{42} &amp; a_{43} &amp; 1 \end{array} \right]
+\left[ \begin{array}{c}
+e_t^{u} \\
+e_t^{g} \\
+e_t^{e} \\
+e_t^{\psi} \end{array} \right]
+&amp;=
+\mathbf{B} 
+\left[ \begin{array}{c}
+\varepsilon_t^{\text{demand shock}} \\
+\varepsilon_t^{\text{investment shock}} \\
+\varepsilon_t^{\text{employment shock}} \\
+\varepsilon_t^{\text{wage share shock}} \end{array} \right]
+\end{split}`
+$$
+
+--
+
+For an exact system identification, one needs *n(n-1)/2 = 6* restrictions (i.e., zero entries). So, the **A** matrix becomes
+
+.pull-left[
+$$
+`\begin{align}
+u_t &amp;= u(u_t, g_t, \psi_t)  \\
+g_t &amp;= g(g_t, u_t, \psi_t)  \\
+e_t &amp;= e(e_t, u_t)  \\
+\psi_t &amp;= \psi(\psi_t, e_t) 
+\end{align}`
+$$
+]
+
+.pull-right[
+
+$$
+`\begin{split}
+\mathbf{A} =  
+\left[ \begin{array}{cccc}
+1 &amp; a_{12} &amp;  0 &amp; a_{14} \\
+a_{21} &amp; 1 &amp; 0 &amp; a_{24} \\
+a_{31} &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; a_{43} &amp; 1 \end{array} \right]
+\end{split}`
+$$
+]
+
+---
+
+# Applied methodology
+
+&lt;br&gt;&lt;br&gt;
+
+.center[
+
+$$
+`\begin{split}
+\mathbf{A} =  
+\left[ \begin{array}{cccc}
+1 &amp; \color{red}{a_{12}} &amp;  0 &amp; a_{14} \\
+\color{red}{a_{21}} &amp; 1 &amp; 0 &amp; a_{24} \\
+a_{31} &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; a_{43} &amp; 1 \end{array} \right]
+\end{split}`
+$$
+
+]
+
+&lt;br&gt;
+
+*a*&lt;sub&gt;12&lt;/sub&gt; and *a*&lt;sub&gt;21&lt;/sub&gt;: .hi[investment-capacity utilization] dynamics.
+
+---
+
+# Applied methodology
+
+&lt;br&gt;&lt;br&gt;
+
+.center[
+
+$$
+`\begin{split}
+\mathbf{A} =  
+\left[ \begin{array}{cccc}
+1 &amp; a_{12} &amp;  0 &amp; a_{14} \\
+a_{21} &amp; 1 &amp; 0 &amp; a_{24} \\
+\color{red}{a_{31}} &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; a_{43} &amp; 1 \end{array} \right]
+\end{split}`
+$$
+
+]
+
+&lt;br&gt;
+
+*a*&lt;sub&gt;31&lt;/sub&gt;: .hi[labor market] dynamics.
+
+---
+
+# Applied methodology
+
+&lt;br&gt;&lt;br&gt;
+
+.center[
+
+$$
+`\begin{split}
+\mathbf{A} =  
+\left[ \begin{array}{cccc}
+1 &amp; a_{12} &amp;  0 &amp; a_{14} \\
+a_{21} &amp; 1 &amp; 0 &amp; a_{24} \\
+a_{31} &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; \color{red}{a_{43}} &amp; 1 \end{array} \right]
+\end{split}`
+$$
+
+]
+
+&lt;br&gt;
+
+*a*&lt;sub&gt;43&lt;/sub&gt;: the .hi[profit-squeeze] hypothesis.
+
+---
+
+# Applied methodology
+
+&lt;br&gt;&lt;br&gt;
+
+.center[
+
+$$
+`\begin{split}
+\mathbf{A} =  
+\left[ \begin{array}{cccc}
+1 &amp; a_{12} &amp;  0 &amp; \color{red}{a_{14}} \\
+a_{21} &amp; 1 &amp; 0 &amp; \color{red}{a_{24}} \\
+a_{31} &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; a_{43} &amp; 1 \end{array} \right]
+\end{split}`
+$$
+
+]
+
+&lt;br&gt;
+
+*a*&lt;sub&gt;14&lt;/sub&gt; and *a*&lt;sub&gt;24&lt;/sub&gt;: the .hi[distributive effects] on investment and capacity utilization.
+
+---
+layout: false
+class: inverse, middle
+
+# Results: 4-variable system
+
+---
+
+# Results
+
+
+.pull-left[
+
+### Housekeeping
+
+
+Lag lengths (order):
+  
+  - 4-variable system: .hi[4] lags;
+  - 5-variable system: .hi[10] lags.
+
+
+These lag orders guarantee .hi[well-specified] models:
+
+  - No *serial correlation* and
+  - No *heteroskedasticity.* 
+
+]
+
+--
+
+.pull-right[
+
+### Visualization strategy
+
+
+The key results are captured by .hi[impulse-response functions] (IRFs).
+
+
+In addition, .hi[cyclical interactions] extracted from IRFs
+
+  - [`Nikiforos et al. (2021)`](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3917005).
+
+]
+
+---
+
+# Results
+
+
+
+
+
+Extracting cyclical trajectories from Impulse-Response Functions:
+
+
+.pull-left[
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-8-1.svg" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+--
+
+.pull-right[
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-9-1.svg" style="display: block; margin: auto;" /&gt;
+
+]
+
+--
+
+.center[
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-10-1.svg" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+---
+
+
+# Results: 4-variable system
+
+*(u,g)* plane:
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-11-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# Results: 4-variable system
+
+*(u,g)* plane:
+
+.pull-left[
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-12-1.svg" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+&lt;br&gt;&lt;br&gt;
+
+- .hi[Clockwise] cycle
+- Investment .hi[leading] capacity utilization.
+]
+
+
+---
+
+
+# Results: 4-variable system
+
+
+
+
+
+
+*(u,&amp;psi;)* plane:
+
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-15-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+# Results: 4-variable system
+
+*(u,&amp;psi;)* plane:
+
+.pull-left[
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-16-1.svg" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+
+&lt;br&gt;&lt;br&gt;
+
+- .hi[Counter-clockwise] cycle
+- .hi[Profit-led] demand/.hi[Profit-squeeze] distribution
+]
+
+
+---
+
+
+# Results: 4-variable system
+
+
+
+
+
+*(e,&amp;psi;)* plane:
+
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-19-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+# Results: 4-variable system
+
+*(e,&amp;psi;)* plane:
+
+.pull-left[
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-20-1.svg" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;br&gt;&lt;br&gt;
+
+- .hi[Counter-clockwise] cycle
+- .hi[Profit-led] demand/.hi[Profit-squeeze] distribution
+]
+
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Results: 5-variable system
+
+
+---
+
+# Applied methodology
+
+### A five-variable system
+
+Aggregate investment is .hi[replaced] by its residential (*g*&lt;sup&gt;*R*&lt;/sup&gt;) and nonresidential (*g*&lt;sup&gt;*N*&lt;/sup&gt;) components.
+
+--
+
+&lt;br&gt;
+
+.pull-left[
+
+A five-variable model:
+
+$$
+`\begin{align}
+g_t^R &amp;= g^R(g_t^R, g_t^N, \psi_t)   \\
+g_t^N &amp;= g^N(g_t^N, u_t, e_t)  \\
+u_t &amp;= u(u_t, g_t^R, \psi_t)  \\ 
+e_t &amp;= e(e_t, g_t^R, u_t)  \\
+\psi_t &amp;= \psi(\psi_t, g_t^N, e_t) 
+\end{align}`
+$$
+]
+
+.pull-right[
+
+The **A** matrix becomes
+
+$$
+`\begin{split}
+\mathbf{A} =  
+\left[ \begin{array}{ccccc}
+1 &amp; a_{12} &amp; 0 &amp; 0 &amp; a_{15}\\
+0 &amp; 1 &amp; a_{23} &amp; a_{24} &amp; 0\\
+a_{31} &amp; 0 &amp; 1 &amp; 0 &amp; a_{35}\\
+a_{41} &amp; 0 &amp; a_{43} &amp; 1 &amp; 0 \\
+0 &amp; a_{52} &amp; 0 &amp; a_{54} &amp; 1 \end{array} \right]
+\end{split}`
+$$
+]
+
+---
+
+# Results: 5-variable system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*(u,&amp;psi;)* plane:
+
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-32-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+.hi[Counter-clockwise] cycle &amp; .hi[Profit-led] demand/.hi[Profit-squeeze] distribution.
+
+---
+
+# Results: 5-variable system
+
+*(e,&amp;psi;)* plane:
+
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-33-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+.hi[Counter-clockwise] cycle &amp; .hi[Profit-led] demand/.hi[Profit-squeeze] distribution.
+
+
+---
+
+
+# Results: 5-variable system
+
+*(u,g&lt;sup&gt;R&lt;/sup&gt;)* plane:
+
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-34-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+.hi[Clockwise] cycle &amp; Residential investment .hi[leading] capacity utilization.
+
+
+---
+
+# Results: 5-variable system
+
+*(u,g&lt;sup&gt;N&lt;/sup&gt;)* plane:
+
+
+&lt;img src="Trinity_ResearchTalk_files/figure-html/unnamed-chunk-35-1.svg" style="display: block; margin: auto;" /&gt;
+
+.hi[Counter-clockwise] cycle &amp;
+Nonresidential investment .hi[lagging] capacity utilization.
+
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Final remarks
+
+
+---
+
+# Final remarks
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+- Results from both four- and five-variable models conform to the .hi["cyclical stylized facts."]
+
+
+--
+
+- The paper verifies the .hi[leading role] played by (residential) investment for the business cycle.
+
+--
+
+- Residential expenditures are .hi[neither] household-led nor autonomous.
+
+--
+
+- A first attempt to .hi[connect] residential investment with the Goodwin pattern.
+
+---
+
+layout: false
+class: inverse, middle
+
+# .b[Thank you!]
+
+
+---
+exclude: true
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
