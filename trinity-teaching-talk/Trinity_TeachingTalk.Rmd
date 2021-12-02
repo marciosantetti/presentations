@@ -1,0 +1,309 @@
+---
+title: ".hi[Many shades of inflation]"
+subtitle: ".note[Marcio Santetti]"
+author: "Trinity College"
+date: "December 2021"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'my-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: false
+---
+class: middle, center, inverse
+
+```{r Setup, include = F}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra,
+       tidyverse, sjPlot, extrafont, mathjaxr, ggforce, furrr, kable, kableExtra)
+
+
+
+
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F,
+  dpi=300
+)
+
+
+```
+
+```{R, colors, include = F}
+# Define pink color
+red_pink <- "#e64173"
+turquoise <- "#20B2AA"
+orange <- "#FFA500"
+red <- "#E02C05"
+blue <- "#2b59c3"
+green <- "#0FDA6D"
+grey_light <- "grey70"
+grey_mid <- "grey50"
+grey_dark <- "grey20"
+purple <- "#6A5ACD"
+met_slate <- "#23373b" 
+```
+
+
+
+```{r, echo=FALSE}
+knitr::read_chunk('script.R')
+
+```
+
+
+```{r, echo=FALSE}
+<<load_packages>>
+
+```
+
+```{r, echo=FALSE}
+<<load_data>>
+
+```
+
+.b[Marcio Santetti]
+
+<img style="border-radius: 30%;" src="jm1_cropped.png" width="150px"/>
+
+.b[Ph.D. Candidate]
+
+.b[University of Utah]
+
+
+[`r fontawesome::fa("envelope")` santetti@gmail.com](mailto:santetti@gmail.com) <br>
+[`r fontawesome::fa("link")` marcio.rbind.io](https://marcio.rbind.io) <br>
+[`r fontawesome::fa("github")` github.com/marciosantetti](https://github.com/marciosantetti) 
+
+---
+layout: false
+class: inverse, middle
+
+# Prologue
+
+---
+
+# Prologue
+
+<br><br><br><br>
+
+Do you think of .hi[inflation] as a *problem*?
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# A bit of theory
+
+
+---
+
+# The Phillips Curve
+
+<br>
+
+A relationship between the rates of .hi[inflation] and .hi[unemployment].
+
+--
+
+<br>
+
+In terms of .hi-red[macroeconomic policy]...
+
+  - .hi-slate[Low] unemployment levels $\implies$ .hi-slate[higher] inflation;
+  
+  - .hi-slate[High] unemployment levels $\implies$ .hi-slate[lower] inflation;
+
+--
+
+<br>
+
+...But what is the .it[mechanism]?
+
+  - Prices change .hi[in proportion] to money wages (*mark-up* pricing).
+
+
+
+---
+
+# The Phillips curve(s)
+
+[`A.W. Phillips's original paper (1958)`](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-0335.1958.tb00003.x)
+
+
+.center[
+<img src="old_pc.png", width = "50%">
+]
+
+
+---
+
+# The Phillips curve(s)
+
+The rise and fall of the US Phillips Curve...
+
+
+```{r, dev = "svg", echo = F, fig.height = 5, fig.width=8}
+<<pc_1>>
+
+```
+
+
+---
+
+# The Phillips curve(s)
+
+The rise and fall of the US Phillips Curve...
+
+```{r, dev = "svg", echo = F, fig.height = 5, fig.width=8}
+<<pc_2>>
+
+```
+
+---
+
+# The Phillips curve(s)
+
+<br><br>
+
+How come that this theory .hi-red[fails] to explain the 1970s?
+
+--
+
+
+Due to a .hi[consistent] increase in the rate of inflation, .hi-slate[expectations] come in.
+
+--
+
+When bargaining for wages, workers mediate their expected gains assuming that .hi[past] inflation will be (to some degree) similar to the present's.
+
+--
+
+<br>
+
+A "new" relationship: unemployment *vs*. the .hi-slate[change] in the inflation rate.
+
+
+--
+
+  - And the .hi-red[Natural Rate of Unemployment] (*aka* NAIRU) comes in...
+
+
+
+---
+
+# The Phillips curve(s)
+
+The rise and fall (and rise) of the US Phillips Curve...
+
+
+```{r, dev = "svg", echo = F, fig.height = 5, fig.width=8}
+<<pc_3>>
+
+```
+
+---
+
+# The Phillips curve(s)
+
+Back to a non-accelerationist world?
+
+
+```{r, dev = "svg", echo = F, fig.height = 5, fig.width=8}
+<<pc_4>>
+
+```
+
+---
+
+layout: false
+class: inverse, middle
+
+# The current scenario
+
+---
+
+# Too much fiscal policy?
+
+More recently, many argue that the Phillips curve is essentially .hi[flat] and .hi[non-accelerationist].
+
+  - [`Blanchard (2016)`](https://www.aeaweb.org/articles?id=10.1257/aer.p20161003); 
+  - [`Forbes et al. (2020)`](https://www.piie.com/publications/working-papers/low-inflation-bends-phillips-curve-around-world)
+  
+--
+
+But with .hi[adverse/unexpected supply shocks], inflation expectations may become *de-anchored*.
+
+--
+
+And what has been going on recently?
+
+  - [`American Rescue Plan and the Build Back Better Act`](https://www.epi.org/blog/fiscal-policy-and-inflation-a-look-at-the-american-rescue-plans-impact-and-what-it-means-for-the-build-back-better-act/);
+  
+  - Supply-side bottlenecks:
+  
+    - [`Truckers shortage`](https://www.nytimes.com/2021/11/09/us/politics/trucker-shortage-supply-chain.html);
+    
+    - [`Shortage of shipping containers`](shortages of shipping containers).
+
+
+---
+
+# Too much fiscal policy?
+
+<br><br>
+
+.pull-left[
+
+- *Too much stimulus* team:
+
+<br>
+
+[`Larry Summers`](https://www.cnn.com/2021/05/12/politics/inflation-worries-larry-summers/index.html)
+
+[`Olivier Blanchard`](https://www.piie.com/blogs/realtime-economic-issues-watch/defense-concerns-over-19-trillion-relief-plan)
+
+]
+
+--
+
+.pull-right[
+
+- *Don't panic* team: 
+
+<br>
+
+[`Paul Krugman`](https://www.nytimes.com/2021/11/11/opinion/inflation-history.html)
+
+
+[`Joseph Stiglitz`](https://www.epi.org/press/nobel-laureate-economist-joseph-stiglitz-issues-statement-in-support-of-build-back-better-agenda/)
+
+]
+
+
+
+---
+
+
+
+layout: false
+class: inverse, middle
+
+# .b[Thank you!]
+
+
+---
+exclude: true
+
+
